@@ -1,0 +1,134 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.navbar-toggler {
+  display: none; /* Hide the toggler on larger screens */
+}
+
+.navbar-nav {
+  display: flex;
+  list-style: none;
+}
+
+.nav-item {
+  margin-left: 10px;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  .navbar-toggler {
+    display: block; /* Show the toggler on smaller screens */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .navbar-nav {
+    display: none; /* Hide the nav links by default on smaller screens */
+    flex-direction: column;
+    padding-top: 10px;
+  }
+
+  .nav-item {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .navbar.show .navbar-nav {
+    display: flex; /* Show the nav links when toggler is clicked */
+  }
+}
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-section {
+  flex: 1 0 300px;
+  margin-bottom: 20px;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  line-height: 1.5;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 18px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-section {
+    flex-basis: auto;
+  }
+
+  .footer-section:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
